@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1 class="text-center"><span class="fa fa-heart"></span> Friend Finder</h1>
+      <hr>
+      <h2 class="text-center">Answer the questions below to find your BFF!</h2>
+      <br>
+
+    <div class="row">
+      <div class="col-lg-12">
+
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">Read each statement. Answer honestly.</h4>
+          </div>
+          <div class="panel-body">
+
+            <div class="form-group">
+				<label for="q1">Life seems a little hectic lately.</label>
+				<select class="form-control" id="q1">
+					<option value="empty"></option>
+					<option value="1">1 - Strongly Disagree</option>
+					<option value="2">2 - Disagree</option>
+					<option value="3">3 - Neither Agree nor Disagree</option>
+					<option value="4">4 - Agree</option>
+					<option value="5">5 - Strongly Agree</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="q2">I prefer the adventures of the world to staying in and relaxing on the couch.</label>
+				<select class="form-control" id="q2">
+					<option value="empty"></option>
+					<option value="1">1 - Strongly Disagree</option>
+					<option value="2">2 - Disagree</option>
+					<option value="3">3 - Neither Agree nor Disagree</option>
+					<option value="4">4 - Agree</option>
+					<option value="5">5 - Strongly Agree</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="q3">I think I'm pretty entertaining and fun to be around.</label>
+				<select class="form-control" id="q3">
+					<option value="empty"></option>
+					<option value="1">1 - Strongly Disagree</option>
+					<option value="2">2 - Disagree</option>
+					<option value="3">3 - Neither Agree nor Disagree</option>
+					<option value="4">4 - Agree</option>
+					<option value="5">5 - Strongly Agree</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="q4">I can be a bit disorganized and careless.</label>
+				<select class="form-control" id="q4">
+					<option value="empty"></option>
+					<option value="1">1 - Strongly Disagree</option>
+					<option value="2">2 - Disagree</option>
+					<option value="3">3 - Neither Agree nor Disagree</option>
+					<option value="4">4 - Agree</option>
+					<option value="5">5 - Strongly Agree</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="q5">I am warm and cuddly.</label>
+				<select class="form-control" id="q5">
+					<option value="empty"></option>
+					<option value="1">1 - Strongly Disagree</option>
+					<option value="2">2 - Disagree</option>
+					<option value="3">3 - Neither Agree nor Disagree</option>
+					<option value="4">4 - Agree</option>
+					<option value="5">5 - Strongly Agree</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="q6">I am disciplined and like to think through my decisions.</label>
+				<select class="form-control" id="q6">
+					<option value="empty"></option>
+					<option value="1">1 - Strongly Disagree</option>
+					<option value="2">2 - Disagree</option>
+					<option value="3">3 - Neither Agree nor Disagree</option>
+					<option value="4">4 - Agree</option>
+					<option value="5">5 - Strongly Agree</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="q7">Sometimes I feel sad.</label>
+				<select class="form-control" id="q7">
+					<option value="empty"></option>
+					<option value="1">1 - Strongly Disagree</option>
+					<option value="2">2 - Disagree</option>
+					<option value="3">3 - Neither Agree nor Disagree</option>
+					<option value="4">4 - Agree</option>
+					<option value="5">5 - Strongly Agree</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="q8">I prefer to stick with things I know.</label>
+				<select class="form-control" id="q8">
+					<option value="empty"></option>
+					<option value="1">1 - Strongly Disagree</option>
+					<option value="2">2 - Disagree</option>
+					<option value="3">3 - Neither Agree nor Disagree</option>
+					<option value="4">4 - Agree</option>
+					<option value="5">5 - Strongly Agree</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="q9">I get along with all personalities and backgrounds.</label>
+				<select class="form-control" id="q9">
+					<option value="empty"></option>
+					<option value="1">1 - Strongly Disagree</option>
+					<option value="2">2 - Disagree</option>
+					<option value="3">3 - Neither Agree nor Disagree</option>
+					<option value="4">4 - Agree</option>
+					<option value="5">5 - Strongly Agree</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="q10">Poetry is silly.</label>
+				<select class="form-control" id="q10">
+					<option value="empty"></option>
+					<option value="1">1 - Strongly Disagree</option>
+					<option value="2">2 - Disagree</option>
+					<option value="3">3 - Neither Agree nor Disagree</option>
+					<option value="4">4 - Agree</option>
+					<option value="5">5 - Strongly Agree</option>
+				</select>
+			</div>
+		</form>
+		<div class="text-center">
+			<button id="submit" type="submit" class="btn btn-success btn-lg">Submit</button>
+		</div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+    $(".submit").on("click", function(event) {
+      event.preventDefault();
+
+      // Here we grab the form elements
+      var newSurvey = {
+        q1: $("#q1").val().trim(),
+        q2: $("#q2").val().trim(),
+        q3: $("#q3").val().trim(),
+        q4: $("#q4").val().trim(),
+        q5: $("#q5").val().trim(),
+        q6: $("#q6").val().trim(),
+        q7: $("#q7").val().trim(),
+        q8: $("#q8").val().trim(),
+        q9: $("#q9").val().trim(),
+        q10: $("#q10").val().trim(),
+      };
+
+      console.log(newSurvey);
+
+
+
+      $.post("/api/friends", newSurvey,
+        function(data) {
+
+            alert("Survey submitted");
+
+          });
+
+          // Clear the form when submitting
+          $("#q1").val("");
+          $("#q2").val("");
+          $("#q3").val("");
+          $("#q4").val("");
+          $("#q5").val("");
+          $("#q6").val("");
+          $("#q7").val("");
+          $("#q8").val("");
+          $("#q9").val("");
+          $("#q10").val("");
+
+
+        });
+
+
+
+</script>
