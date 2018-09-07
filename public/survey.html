@@ -17,7 +17,10 @@
 
     <div class="jumbotron bg-info text-light">
       <h1 class="text-center"><span class="fa fa-heart"></span> Friend Finder</h1>
-      <hr>
+	  <hr>
+	 	  <h4>Name (Required)</h4>
+	  <input type="text" id="name" class="form-control" required>
+	  <hr>
       <h2 class="text-center">Answer the questions below to find your BFF!</h2>
 	
 			</div>
@@ -159,41 +162,57 @@
 
   </div>
 </div>
-</body>
-</html>
 
+  <!-- Modal -->
+  <div id="results-modal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+	
+		  <!-- Modal content-->
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button class="close" data-dismiss="modal">&times;</button>
+			  <h2 class="modal-title"><strong>Your new BFF!</strong></h2>
+			</div>
+			<div class="modal-body">
+			  <h2 id="match-name"></h2>
+			  <img id="match-img" src=""" alt="">
+			</div>
+			<div class="modal-footer">
+			  <button class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+	
+		</div>
+	  </div>
 
 <script type="text/javascript">
 
-    $(".submit").on("click", function(event) {
+    $("#submit").on("click", function(event) {
       event.preventDefault();
 
       // Here we grab the form elements
-      var newSurvey = {
-        q1: $("#q1").val().trim(),
-        q2: $("#q2").val().trim(),
-        q3: $("#q3").val().trim(),
-        q4: $("#q4").val().trim(),
-        q5: $("#q5").val().trim(),
-        q6: $("#q6").val().trim(),
-        q7: $("#q7").val().trim(),
-        q8: $("#q8").val().trim(),
-        q9: $("#q9").val().trim(),
-        q10: $("#q10").val().trim(),
+      var surveyAnswers = {
+		name: $("#name").val().trim(),
+		scores: [
+        $("#q1").val().trim(),
+        $("#q2").val().trim(),
+        $("#q3").val().trim(),
+        $("#q4").val().trim(),
+        $("#q5").val().trim(),
+        $("#q6").val().trim(),
+        $("#q7").val().trim(),
+        $("#q8").val().trim(),
+        $("#q9").val().trim(),
+        $("#q10").val().trim()]
       };
 
-      console.log(newSurvey);
+      console.log(surveyAnswers);
 
 
 
-      $.post("/api/friends", newSurvey,
-        function(data) {
 
-            alert("Survey submitted");
-
-          });
-
-          // Clear the form when submitting
+		  // Clear the form when submitting
+		  $("#name").val(""),
           $("#q1").val("");
           $("#q2").val("");
           $("#q3").val("");
@@ -211,3 +230,5 @@
 
 
 </script>
+</body>
+</html>
