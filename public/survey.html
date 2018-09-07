@@ -209,6 +209,16 @@
       console.log(surveyAnswers);
 
 
+$.post("/api/friends", surveyAnswers, function(data) {
+
+// Grab the result from the AJAX post so that the best match's name and photo are displayed.
+$("#bff-name").text(data.name);
+$("#bff-img").attr("src", data.photo);
+
+// Show the modal with the best match
+$("#results-modal").modal("toggle");
+
+});
 
 
 		  // Clear the form when submitting
