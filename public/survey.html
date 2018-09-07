@@ -174,8 +174,8 @@
 			  <h2 class="modal-title"><strong>Your new BFF!</strong></h2>
 			</div>
 			<div class="modal-body">
-			  <h2 id="match-name"></h2>
-			  <img id="match-img" src=""" alt="">
+			  <h2 id="bff-name"></h2>
+			  <img id="bff-img" src=""" alt="">
 			</div>
 			<div class="modal-footer">
 			  <button class="btn btn-default" data-dismiss="modal">Close</button>
@@ -194,16 +194,16 @@
       var surveyAnswers = {
 		name: $("#name").val().trim(),
 		scores: [
-        $("#q1").val().trim(),
-        $("#q2").val().trim(),
-        $("#q3").val().trim(),
-        $("#q4").val().trim(),
-        $("#q5").val().trim(),
-        $("#q6").val().trim(),
-        $("#q7").val().trim(),
-        $("#q8").val().trim(),
-        $("#q9").val().trim(),
-        $("#q10").val().trim()]
+        $("#q1").val(),
+        $("#q2").val(),
+        $("#q3").val(),
+        $("#q4").val(),
+        $("#q5").val(),
+        $("#q6").val(),
+        $("#q7").val(),
+        $("#q8").val(),
+        $("#q9").val(),
+        $("#q10").val()]
       };
 
       console.log(surveyAnswers);
