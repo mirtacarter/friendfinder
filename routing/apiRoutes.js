@@ -59,9 +59,6 @@ module.exports = function(app) {
       }
     }
 
-    // save data to the database
-    friendsData.push(surveyAnswers);
-
     // Return bff json to render to page
     res.json(bff);
 
